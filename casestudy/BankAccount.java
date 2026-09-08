@@ -97,7 +97,6 @@ public class BankAccount {
 		a1.showbalance();
 		a2.showbalance();
 		a2.interest(2);
-		System.out.println();
 	}
 
 }
