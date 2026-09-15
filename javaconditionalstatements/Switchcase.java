@@ -448,8 +448,7 @@ public class Switchcase {
 		System.out.println("Do you want to add more items in veg or non-veg: ");
 		System.out.println("enter (y) to continue,any other to exit from menu");
 	    s=sc.next();
-		
-
+	
 	}while(s.equalsIgnoreCase("y"));
 		double cgst=(2.5/100)*price;
 		double scharge=(5.0/100)*price;
