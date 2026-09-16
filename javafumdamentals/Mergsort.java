@@ -41,7 +41,7 @@ public class Mergsort {
 			
 		}
 		while(i<left.length) {
-			arr[k++]=left[i++];;
+			arr[k++]=left[i++];
 		}
 		while(j<right.length) {
 			arr[k++]=right[j++];

@@ -3,7 +3,7 @@ package com.javaconditionalstatements;
 public class Ifcondition1 {
 
 	public static void main(String[] args) {
-		double num=10,age=23;
+		int num=1,age=23;
 		String name="Sandeep";
 		 if(num>0) 
 			 System.out.println("number is positive number");
@@ -23,6 +23,7 @@ public class Ifcondition1 {
  		
  		System.out.println("you are not eligible!");
  		
+		
 		
 		
 	}

@@ -3,7 +3,9 @@ package com.javaconditionalstatements;
 import java.util.Scanner;
 
 public class Switchcase {
-	 
+	  static{
+		 System.out.println("WellCome to Sandeep Restaurant"); 
+	  }
 	void selectfoodtype() {
 		System.out.println("Choose veg or non veg.");
 		System.out.println("1.Vegetarian ");
@@ -11,6 +13,7 @@ public class Switchcase {
 		System.out.println("3.Starters");
 		System.out.println("4.Soups");
 		System.out.println("5.Drinks");
+		System.out.println("6.Deserts");
 	}
 
 	void showVegMenu() {
@@ -62,11 +65,18 @@ public class Switchcase {
 		System.out.println("*******************************************************************************************");
 
 	}
+	void showDeserts() {
+		System.out.println("1. Vennela Ice-Cream     Rs:50");
+		System.out.println("2. Chocolate Ice-Cream   Rs:60");
+		System.out.println("3. Gulab Jamun           Rs:40");
+		System.out.println("4. Brownie               Rs:80");
+		System.out.println("5. Rasmalai              Rs:70");
+	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Switchcase s1 = new Switchcase();
-		int nod = 0;
+		int nod = 00;
 		double price=0;
 		String selectedItem="";
 		String s;
@@ -92,7 +102,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*300);
-						selectedItem += nod + ". Paneer Biryani         Rs:300    "+quantity+"    	 "+quantity*300+ "\n";
+						selectedItem +=nod + ". Paneer Biryani          Rs:300    "+quantity+"   	 "+quantity*300+"\n";
 						break;
 					}
 					case 2: {
@@ -101,8 +111,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*120);
-						selectedItem += nod + ". Veg Meals              Rs:120    "+quantity+"    	 "+quantity*120+ "\n";
-						
+						selectedItem +=nod + ". Veg Meals               Rs:120    "+quantity+"   	 "+quantity*120+"\n";
 						break;
 					}
 					case 3: {
@@ -111,7 +120,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*400);
-						selectedItem +=nod + ". Veg Biryani            Rs:400    "+quantity+"    	 "+quantity*400+"\n";
+						selectedItem +=nod + ". Veg Biryani             Rs:400    "+quantity+"   	 "+quantity*400+"\n";
 						break;
 					}
 					case 4: {
@@ -120,7 +129,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*120);
-						selectedItem +=nod + ". Veg Munchurian         Rs:120    "+quantity+"     	"+quantity*120+"\n";
+						selectedItem +=nod + ". Veg Munchurian          Rs:120    "+quantity+"    	 "+quantity*120+"\n";
 						break;
 					}
 					case 5: {
@@ -129,7 +138,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*100);
-						selectedItem +=nod + ". Veg Fried Rice         Rs:100    "+quantity+"     	"+quantity*100+"\n";
+						selectedItem +=nod + ". Veg Fried Rice          Rs:100    "+quantity+"    	 "+quantity*100+"\n";
 						break;
 					}case 6:{
 						nod++;
@@ -137,7 +146,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*230);
-						selectedItem +=nod + ". Mashroom birayani      Rs:230    "+quantity+"     	"+quantity*230+ "\n";
+						selectedItem +=nod + ". Mashroom birayani       Rs:230    "+quantity+"    	 "+quantity*230+"\n";
 						break;
 					}
 					case 7:{
@@ -146,7 +155,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*60);
-						selectedItem +=nod + ". Dhal fry               Rs:60     "+quantity+"     	"+quantity*60+"\n";
+						selectedItem +=nod + ". Dhal fry                Rs:60     "+quantity+"    	 "+quantity*60+"\n";
 						break;
 					}
 					default: {
@@ -176,7 +185,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*240);
-						selectedItem +=nod + ". Chicken Biryani        Rs:240    "+quantity+"    	 "+quantity*240+"\n";
+						selectedItem +=nod + ". Chicken Biryani         Rs:240    "+quantity+"    	 "+quantity*240+"\n";
 						break;
 					}
 					case 2: {
@@ -185,7 +194,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*520);
-						selectedItem +=nod + ". Motton Biryani         Rs:520    "+quantity+"    	 "+quantity*520+"\n";
+						selectedItem +=nod + ". Motton Biryani          Rs:520    "+quantity+"   	 "+quantity*520+"\n";
 						break;
 					}
 					case 3: {
@@ -194,7 +203,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*150);
-						selectedItem +=nod + ". Egg Biryani            Rs:150    "+quantity+"    	 "+quantity*150+"\n";
+						selectedItem +=nod + ". Egg Biryani             Rs:150    "+quantity+"   	 "+quantity*150+"\n";
 						break;
 					}
 					case 4: {
@@ -203,7 +212,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*120);
-						selectedItem +=nod + ". Chicken Fried Rice     Rs:120    "+quantity+"    	 "+quantity*120+"\n";
+						selectedItem +=nod + ". Chicken Fried Rice      Rs:120    "+quantity+"   	 "+quantity*120+"\n";
 						break;
 					}
 					case 5: {
@@ -212,7 +221,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*200);
-						selectedItem +=nod + ". Chicken 65             Rs:200    "+quantity+"     	"+quantity*200+"\n";
+						selectedItem +=nod + ". Chicken 65              Rs:200    "+quantity+"    	 "+quantity*200+"\n";
 						break;
 					}
 					case 6:{
@@ -221,7 +230,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*100);
-						selectedItem +=nod + ". Fish fry               Rs:100    "+quantity+"     	"+quantity*100+"\n";
+						selectedItem +=nod + ". Fish fry                Rs:100    "+quantity+"    	 "+quantity*100+"\n";
 						break;
 					}
 					case 7:{
@@ -230,7 +239,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*100);
-						selectedItem +=nod + ". Prawns curry           Rs:100    "+quantity+"     	"+quantity*100+"\n";
+						selectedItem +=nod + ". Prawns curry            Rs:100    "+quantity+"    	 "+quantity*100+"\n";
 						break;
 					}
 					default: {
@@ -259,7 +268,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*150);
-						selectedItem +=nod + ". Hara Bara Kabab        Rs:150    "+quantity+"     	"+quantity*150+"\n";
+						selectedItem +=nod + ". Hara Bara Kabab         Rs:150    "+quantity+"    	 "+quantity*150+"\n";
 						break;
 					}
 					case 2: {
@@ -268,7 +277,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*180);
-						selectedItem +=nod + ". Paneer Tikka           Rs:180    "+quantity+"     	"+quantity*180+"\n";
+						selectedItem +=nod + ". Paneer Tikka            Rs:180    "+quantity+"    	 "+quantity*180+"\n";
 						break;
 					}
 					case 3: {
@@ -277,7 +286,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*180);
-						selectedItem +=nod + ". Fries                  Rs:180    "+quantity+"    	 "+quantity*180+"\n";
+						selectedItem +=nod + ". Fries                   Rs:180    "+quantity+"    	 "+quantity*180+"\n";
 						break;
 					}
 					case 4: {
@@ -286,7 +295,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*190);
-						selectedItem +=nod + ". Tandoori Babycorn      Rs:190    "+quantity+"   	  "+quantity*190+"\n";
+						selectedItem +=nod + ". Tandoori Babycorn       Rs:190    "+quantity+"   	 "+quantity*190+"\n";
 						break;
 					}
 					case 5: {
@@ -295,7 +304,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*250);
-						selectedItem +=nod + ". Paneer Pakoda          Rs:200    "+quantity+"  	 	  "+quantity*200+ "\n";
+						selectedItem +=nod + ". Paneer Pakoda           Rs:200    "+quantity+"  	  "+quantity*200+"\n";
 						break;
 					}
 					case 6:{
@@ -304,7 +313,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*200);
-						selectedItem +=nod + ". Mashroom Tikka         Rs:100    "+quantity+"   	  "+quantity*100+ "\n";
+						selectedItem +=nod + ". Mashroom Tikka          Rs:100    "+quantity+"   	 "+quantity*100+"\n";
 						break;
 					}
 					default: {
@@ -333,7 +342,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*79);
-						selectedItem +=nod + ". Motton Soup            Rs:79     "+quantity+"    	 "+quantity*79+"\n";
+						selectedItem +=nod + ". Motton Soup             Rs:79     "+quantity+"    	 "+quantity*79+"\n";
 						break;	
 					}
 					case 2: {
@@ -342,7 +351,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*79);
-						selectedItem +=nod + ". Sweet Corn Soup        Rs:79     "+quantity+"   	  "+quantity*79+"\n";
+						selectedItem +=nod + ". Sweet Corn Soup        Rs:79     "+quantity+"   	 "+quantity*79+"\n";
 						break;
 					}
 					case 3: {
@@ -390,7 +399,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*50);
-						selectedItem +=nod + ". Mango juice            Rs:50     "+quantity+"   	  "+quantity*50+"\n";
+						selectedItem +=nod + ". Mango juice            Rs:50     "+quantity+"   	 "+quantity*50+"\n";
 						break;
 					}
 					case 2: {
@@ -408,7 +417,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*150);
-						selectedItem +=nod + ". Gin and Tonic          Rs:150    "+quantity+"     	"+quantity*150+"\n";
+						selectedItem +=nod + ". Gin and Tonic          Rs:150    "+quantity+"     	 "+quantity*150+"\n";
 						break;
 					}
 					case 4: {
@@ -417,7 +426,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*120);
-						selectedItem +=nod + ". Scotch on the rocks    Rs:120    "+quantity+"     	"+quantity*120+"\n";
+						selectedItem +=nod + ". Scotch on the rocks    Rs:120    "+quantity+"     	 "+quantity*120+"\n"; 
 						break;
 					}
 					case 5: {
@@ -426,7 +435,7 @@ public class Switchcase {
 						System.out.println("Enter quantity");
 						quantity=sc.nextInt();
 						price=price+(quantity*140);
-						selectedItem +=nod + ". Beer                   Rs:140    "+quantity+"         "+quantity*140+"\n";
+						selectedItem +=nod + ". Beer                   Rs:140    "+quantity+"            "+quantity*140+"\n";
 						break;
 					}
 					
@@ -441,6 +450,75 @@ public class Switchcase {
 				}while(choice5.equalsIgnoreCase("y"));
 				break;
 			}
+			case 6:{
+				System.out.println("You choosen Deserts.");
+				String choice6;
+				int quantity=0;
+				do {
+					s1.showDeserts();
+				System.out.println("Select your Desert: ");
+				int food = sc.nextInt();
+				switch (food) {
+					case 1: {
+						nod++;
+						System.out.println("You selected vennela ice-cream");
+						System.out.println("Enter quantity");
+						quantity=sc.nextInt();
+						price=price+(quantity*50);
+						selectedItem +=nod + ". Mango juice            Rs:50     "+quantity+"   	 "+quantity*50+"\n";
+						break;
+					}
+					case 2: {
+					    nod++;
+					    System.out.println("You selected Chocolate Ice-Cream");
+					    System.out.println("Enter quantity");
+					    quantity = sc.nextInt();
+					    price = price + (quantity * 60);
+					    selectedItem +=nod + ". Chocolate Ice-Cream    Rs:60     "+quantity+"            "+quantity*60+"\n";
+					    break;
+					}
+
+					case 3: {
+					    nod++;
+					    System.out.println("You selected Gulab Jamun");
+					    System.out.println("Enter quantity");
+					    quantity = sc.nextInt();
+					    price = price + (quantity * 40);
+					    selectedItem +=nod + ". Gulab Jamun            Rs:40     "+quantity+"            "+quantity*40+"\n";
+					    break;
+					}
+
+					case 4: {
+					    nod++;
+					    System.out.println("You selected Brownie");
+					    System.out.println("Enter quantity");
+					    quantity = sc.nextInt();
+					    price = price + (quantity * 80);
+					    selectedItem +=nod + ". Brownie                Rs:80     "+quantity+"            "+quantity*80+"\n";
+					    break;
+					}
+
+					case 5: {
+					    nod++;
+					    System.out.println("You selected Rasmalai");
+					    System.out.println("Enter quantity");
+					    quantity = sc.nextInt();
+					    price = price + (quantity * 70);
+					    selectedItem +=nod + ". Rasmalai               Rs:70     "+quantity+"           "+quantity*70+"\n";
+					    break;
+					}
+					
+					default: {
+						System.out.println("Desert is not available!");
+					}
+				}
+				System.out.println("Do you want to add more items in Deserts: ");
+				System.out.println("enter (y) to continue,any other to exit from Deserts");
+			    choice6=sc.next();
+				
+				}while(choice6.equalsIgnoreCase("y"));
+				break;
+			}
 			default: {
 				System.out.println("You Entered invalid option!");
 			}
@@ -453,7 +531,7 @@ public class Switchcase {
 		double cgst=(2.5/100)*price;
 		double scharge=(5.0/100)*price;
 		System.out.println("\nYour Selected Items:");
-		System.out.println("NO.    Item Name          Price | Quantity| total-Item-price");
+		System.out.println("NO.    Item Name            Price | Quantity| total-Item-price");
 		System.out.println(selectedItem);
 		System.out.println("                  Service charge(5%)             "+scharge);
 		System.out.println("                          CGST(2.5%)             "+cgst);
